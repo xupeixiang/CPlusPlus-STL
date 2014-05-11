@@ -14,6 +14,7 @@ inline void PRINT_ELEMENTS(const T& coll, const char* optcstr="")
     cout << endl;
 }
 
+/*
 int main()
 {
     vector<int> vct;
@@ -23,3 +24,4 @@ int main()
     }
     PRINT_ELEMENTS(vct, "test template function on vector");
 }
+*/
