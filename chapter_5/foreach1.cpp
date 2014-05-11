@@ -5,16 +5,29 @@
 
 using namespace std;
 
+// simple function
 void print(int elem)
 {
     cout << elem << ' ';
 }
 
+// template function
 template <class T>
 void print_all(T elem)
 {
     cout << elem << ' ';
 }
+
+// template functor
+template <class T>
+class PrintAll
+{
+    public:
+        void operator() (T elem) const
+        {
+            cout << elem << ' ';
+        }
+};
 
 int main()
 {
@@ -26,6 +39,6 @@ int main()
         vct.push_back(string(buff));
     }
 
-    for_each (vct.begin(), vct.end(), print_all<string>);
+    for_each (vct.begin(), vct.end(), PrintAll<string>());
     cout << endl;
 }
