@@ -9,7 +9,7 @@ inline void PRINT_ELEMENTS(const T& coll, const char* optcstr="")
     cout << optcstr << endl;
     for(pos = coll.begin(); pos!= coll.end(); ++pos)
     {
-        cout << *pos << ' ';
+        cout << *pos << "  ";
     }
     cout << endl;
 }
