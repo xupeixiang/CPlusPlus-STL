@@ -15,6 +15,6 @@ int main()
 
     sort(col + 1, col + 6);
 
-    copy(col, col + 6, ostream_iterator<int>(cout, "  "));
+    copy(col, col + 6, ostream_iterator<int>(cout, " "));
     cout << endl;
 }
