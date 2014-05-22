@@ -1,21 +1,9 @@
 #include <iostream>
 #include <list>
 #include <algorithm>
+#include "genera.h"
 #include "../chapter_5/print.cpp"
 using namespace std;
-
-class IntSequence
-{
-    private:
-        int value;
-    public:
-        IntSequence(int initValue): value(initValue) {}
-
-        int operator() ()
-        {
-            return value++;
-        }
-};
 
 int main()
 {
