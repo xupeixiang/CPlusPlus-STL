@@ -22,6 +22,12 @@ class MeanValue
         {
             return static_cast<double>(sum) / static_cast<double>(num);
         }
+        
+        // no return value declartion
+        operator double ()
+        {
+            return static_cast<double>(sum) / static_cast<double>(num);
+        }
 };
 
 int main()
@@ -32,4 +38,7 @@ int main()
               IntSequence(1));
     MeanValue mv = for_each(coll.begin(), coll.end(), MeanValue());
     cout << "mean value: " << mv.value() << endl;
+
+    double d_mv = for_each(coll.begin(), coll.end(), MeanValue());
+    cout << "mean value: " << d_mv << endl;
 }
