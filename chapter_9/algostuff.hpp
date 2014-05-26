@@ -23,6 +23,7 @@ inline void PRINT_ELEMENTS(const T& coll, const char* optstr = "")
     std::cout << std::endl;
 }
 
+template <class T>
 inline void INSERT_ELEMENTS(T& coll, int first, int last)
 {
     for (int i = first; i <= last; ++i)
